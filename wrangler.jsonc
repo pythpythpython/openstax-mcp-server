@@ -3,6 +3,7 @@
   "name": "openstax-mcp-server",
   "main": "src/index.ts",
   "compatibility_date": "2025-11-28",
+  "compatibility_flags": ["nodejs_compat"],
   "observability": {
     "enabled": true
   },
