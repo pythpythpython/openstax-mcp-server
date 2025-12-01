@@ -16,7 +16,7 @@ An AI-powered Model Context Protocol (MCP) server that connects LLMs (like Claud
    - **Type:** command
    - **Command:**
 
-    npx -y @modelcontextprotocol/server-cloudflare https://openstax-mcp-server.svillalobos-gonzalez.workers.dev
+    npx -y openstax-mcp-bridge https://openstax-mcp-server.svillalobos-gonzalez.workers.dev
 
 ### Option B: Connect with Claude Desktop
 
@@ -30,7 +30,7 @@ Add the following configuration to your Claude config file:
           "command": "npx",
           "args": [
             "-y",
-            "@modelcontextprotocol/server-cloudflare",
+            "openstax-mcp-bridge",
             "https://openstax-mcp-server.svillalobos-gonzalez.workers.dev"
           ]
         }
@@ -65,6 +65,7 @@ This project uses:
 - **Workers KV:** To cache parsed XML content and generated problems.
 - **Vectorize:** For storing embeddings and enabling semantic search.
 - **Cloudflare AI:** To run embedding models and LLMs for problem generation.
+- **OpenStax MCP Bridge:** A custom CLI tool to bridge stdio to the remote server.
 
 ## License & Attribution
 
